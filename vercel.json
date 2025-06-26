@@ -1,0 +1,9 @@
+{
+  "version": 2,
+  "builds": [
+    { "src": "api/criar-pix.js", "use": "@vercel/node" }
+  ],
+  "routes": [
+    { "src": "/api/criar-pix", "dest": "api/criar-pix.js" }
+  ]
+}
