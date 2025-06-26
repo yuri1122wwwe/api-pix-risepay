@@ -1,8 +1,7 @@
 export default async function handler(req, res) {
   if (req.method !== 'POST') return res.status(405).end();
 
-  const token = '33e85c6700fa919df9c37d99aeb604253bff2e639086c66024decdb199344ae1'; // <--- Troque aqui
-
+  const token = '33e85c6700fa919df9c37d99aeb604253bff2e639086c66024decdb199344ae1'; // 
   const payload = {
     amount: 150.75,
     payment: { method: 'pix' },
